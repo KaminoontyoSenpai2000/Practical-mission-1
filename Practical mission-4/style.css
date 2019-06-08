@@ -1,0 +1,106 @@
+body {
+  padding: 20px;
+  background: #fbfbfb;
+}
+
+/* items */
+
+.container div {
+  min-height: 60px;
+ }
+
+/* specific item styles */
+
+.item-1 {
+  background: silver;
+}
+
+.item-2 {
+  background: grey;
+}
+
+.item-3 {
+  background: grey;
+}
+
+.item-4 {
+  background: #D3D3D3;
+}
+
+.item-5 {
+  background: silver;
+}
+
+.item-6 {
+  background: silver;
+}
+
+.item-7 {
+  background: grey;
+}
+
+.item-8 {
+  background: grey;
+}
+
+.item-9 {
+  background: #D3D3D3;
+}
+
+.item-10 {
+  background: silver;
+}
+
+.item-11 {
+  background: #D3D3D3;
+}
+
+.item-12 {
+  background: silver;
+}
+
+
+.container {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-auto-flow: dense;
+}
+
+.item-1 {
+  grid-column: span 4;
+}
+
+.item-2 {
+  grid-column: span 5;
+}
+
+.item-12 {
+  grid-row: 1 / span 1;
+  grid-column: 10 / span 4;
+}
+
+.item-3 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.item-5 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.item-6 {
+  grid-column: 1 / span 3;
+  grid-row: span 2;
+}
+
+.item-7 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+
